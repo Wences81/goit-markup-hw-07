@@ -78,14 +78,9 @@ header {
   /* border: solid red; */
 }
 
-.nav,
-.site-nav,
-.auth-nav  {
+
+.site-header__nav {
   display: flex;
-}
-
-
-.nav {
   justify-content: space-between;
   align-items: center;
   padding-top: 24px;
@@ -95,18 +90,20 @@ header {
 }
 
 .site-nav {
+  display: flex;
   padding: 0;
   margin-left: 93px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.site-nav .item + .item {
+.site-nav__item + .site-nav__item {
   margin-left: 50px;
   
 }
 
 .auth-nav {
+  display: flex;
   margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
@@ -114,10 +111,6 @@ header {
 
 .auth-nav li:not(:last-child) {
   margin-right: 40px;
-}
-
-.title {
-  color: var(--black-text);
 }
 
 /* Site nav */
@@ -133,7 +126,7 @@ header {
   text-decoration: none;
 }
 
-nav .link {
+.site-nav__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -152,7 +145,7 @@ nav .link {
   color: var(--black-text-logo);
 }
 
-.site-nav .link {
+.site-nav__link {
   padding: 32px 0;
   
   color: var(--black-text);
@@ -164,8 +157,8 @@ nav .link {
 }
 
 
-.site-nav .link:hover, 
-.site-nav .link:focus {
+.site-nav__link:hover, 
+.site-nav__link:focus {
 
   color: var(--blue-text);
 
@@ -185,22 +178,8 @@ nav .link {
   border-radius: 2px;
 }
 
-/* 
-.site-nav .link:hover::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--blue-text);
-  left: 0;
-  bottom: 0;
-  border-radius: 2px;
-  
-} */
 
-
-.auth-nav .link {
+.auth-nav__link {
   color: var(--grey-text);
 
   font-weight: 500;
@@ -218,15 +197,15 @@ nav .link {
 
 }
 
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.auth-nav__link:hover,
+.auth-nav__link:focus {
   color: var(--blue-text);
 
  
 }
 
 
-.icon-envelop {
+.auth-nav__icon-envelop {
   width: 18px;
   height: 18px;
   
@@ -237,7 +216,7 @@ nav .link {
 }
 
 
-.icon-smartphone {
+.auth-nav__icon-smartphone {
   width: 18px;
   height: 18px;
   margin-right: 10px;
@@ -247,6 +226,12 @@ nav .link {
 
 
 /* Hero */
+
+.title {
+  color: var(--black-text);
+}
+
+
 .hero {
   max-width: 1600px;
   height: 600px;
@@ -273,7 +258,7 @@ nav .link {
   padding-bottom: 200px;
 }
 
-.hero .hero-title {
+.hero__hero-title {
   margin: 0;
   padding-top: 0px;
   padding-bottom: 30px;
@@ -286,7 +271,7 @@ nav .link {
   line-height: 1.36;
 }
 
-.button {
+.hero__button {
 
   padding: 10px 32px;
 
