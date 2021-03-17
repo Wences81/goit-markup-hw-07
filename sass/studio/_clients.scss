@@ -27,7 +27,7 @@
   
 }
 
-.clients-list__items:not(:last-child) {
+&:not(:last-child) {
   margin-right: 30px;
   
 }
@@ -49,8 +49,8 @@
   transition: color 250ms var(--timing-function);
 }
 
-.clients-list__link:hover,
-.clients-list__link:focus {
+&:hover,
+&:focus {
   
   border: 1px solid var(--blue-text);
   color: var(--blue-text); 

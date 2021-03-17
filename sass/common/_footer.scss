@@ -85,8 +85,8 @@
  
 }
 
-.footer-list__link:hover,
-.footer-list__link:focus {
+&:hover,
+&:focus {
   color: var(--blue-text);
 }
 
@@ -139,8 +139,8 @@
 
 }
 
-.social-footer__link:hover,
-.social-footer__link:focus {
+&:hover,
+&:focus {
   background-color: var(--blue-text);
 }
   

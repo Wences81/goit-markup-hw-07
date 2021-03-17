@@ -28,7 +28,7 @@
   margin-bottom: 0;
 }
 
-.auth-nav li:not(:last-child) {
+& li:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -75,8 +75,8 @@
 }
 
 
-.site-nav__link:hover, 
-.site-nav__link:focus {
+&:hover, 
+&:focus {
 
   color: var(--blue-text);
 
@@ -115,8 +115,8 @@
 
 }
 
-.auth-nav__link:hover,
-.auth-nav__link:focus {
+&:hover,
+&:focus {
   color: var(--blue-text);
 
  
